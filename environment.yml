@@ -1,13 +1,15 @@
 name: gaussian_splatting
 channels:
+  - nvidia/label/cuda-11.6.2
   - pytorch
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
-  - cudatoolkit=11.6
+  - cuda-toolkit=11.6
   - plyfile
   - python=3.7.13
   - pip=22.3.1
+  - pytorch-gpu=1.12.1
   - pytorch=1.12.1
   - torchaudio=0.12.1
   - torchvision=0.13.1
